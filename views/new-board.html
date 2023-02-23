@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../public/img/logo-backlog.svg"
+      type="image/x-icon"
+    />
+    <title>Nuevo tablero</title>
+  </head>
+  <body
+    class="bodyBoard"
+    onload="if (!(verificarLocalStorage())) redireccionarSinLocalStorage();"
+  >
+    <header class="nav">
+      <figure class="contenedorLoader">
+        <section class="loader"></section>
+      </figure>
+      <a href="home.html"
+        ><img src="../public/img/logo-backlog.svg" alt="logo de backlog"
+      /></a>
+    </header>
+    <main>
+      <h1 class="boardTitle">
+        Título
+        <button class="editar" id="editar">
+          <i class="fa-solid fa-pen"></i>
+        </button>
+      </h1>
+      <section class="participantes">
+        <h2 class="boardParticipantes">
+          Participantes 1 <i class="fa-solid fa-user"></i>
+        </h2>
+        <a href="#" class="sumarParticipantes transform"
+          ><i class="fa-solid fa-plus"></i
+        ></a>
+      </section>
+      <section class="boards">
+        <article class="board">
+          <section>
+            <h3>To do</h3>
+            <div id="form"></div>
+            <div id="taskContainer"></div>
+          </section>
+          <a class="transform" href="#" id="toDoCreate"
+            ><i class="fa-solid fa-plus"></i
+          ></a>
+        </article>
+        <article class="board">
+          <section>
+            <h3>In process</h3>
+          </section>
+          <section id="formProcess"></section>
+          <section id="taskContainerProcess"></section>
+        </article>
+        <article class="board">
+          <section>
+            <h3>Done</h3>
+          </section>
+          <section id="formDone"></section>
+          <section id="taskContainerDone"></section>
+        </article>
+      </section>
+    </main>
+    <footer class="footerBoard">
+      <a href="home.html"
+        ><article class="transform">
+          <i class="fa-solid fa-arrow-left"></i>
+          <h4>Home</h4>
+        </article></a
+      >
+    </footer>
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/url.js"></script>
+    <script src="../js/cards.js"></script>
+  </body>
+</html>

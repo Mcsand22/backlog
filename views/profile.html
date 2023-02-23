@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../public/img/logo-backlog.svg"
+      type="image/x-icon"
+    />
+    <title>Mi perfil</title>
+  </head>
+  <body
+    onload="if (!(verificarLocalStorage())) redireccionarSinLocalStorage();"
+  >
+    <header class="nav">
+      <figure class="contenedorLoader">
+        <div class="loader"></div>
+      </figure>
+      <a href="home.html"
+        ><img src="../public/img/logo-backlog.svg" alt="logo de backlog"
+      /></a>
+    </header>
+    <main onload="mostrarPerfil()">
+      <h1 class="miPerfilTitle">Mi perfil</h1>
+      <button type="submit" id="fotoPerfil" class="fotoPerfil">
+        <i class="fa-solid fa-user"></i>
+      </button>
+      <form action="" method="" class="formRegister">
+        <label for="name" name="name">Nombre </label>
+        <input type="text" name="name" readonly="true" id="nameProfile" />
+        <label for="lastname" name="lastname">Apellido</label>
+        <input
+          type="text"
+          name="lastname"
+          readonly="true"
+          id="lastnameProfile"
+        />
+        <label for="mail" name="mail">Mail</label>
+        <input type="email" name="mail" readonly="true" id="mailProfile" />
+        <label for="password" name="password">Contraseña</label>
+        <input type="password" readonly="true" id="passProfile" />
+        <button class="transform"><i class="fa-solid fa-pen"></i></button>
+      </form>
+    </main>
+    <footer>
+      <img src="../public/img/logo-backlog.svg" alt="logo de backlog" />
+      <figcaption>< backlog ></figcaption>
+    </footer>
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/url.js"></script>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../public/img/logo-backlog.svg"
+      type="image/x-icon"
+    />
+    <title>Inicio de sesión</title>
+  </head>
+  <body class="bodyForm">
+    <header>
+      <figure class="contenedorLoader">
+        <div class="loader"></div>
+      </figure>
+      <img src="../public/img/logo-backlog.svg" alt="logo de backlog" />
+    </header>
+    <main>
+      <form class="form" id="logIn">
+        <label for="mail">Mail</label>
+        <input type="mail" name="mail" id="mailLogIn" required />
+        <p id="warningMail"></p>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="passwordLogIn" required />
+        <p id="warningPassword"></p>
+        <p id="warningValidation"></p>
+        <button type="submit" class="btn">Iniciar sesión</button>
+      </form>
+    </main>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/url.js"></script>
+  </body>
+</html>

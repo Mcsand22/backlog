@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "pass": "123456789",
+      "name": "maca",
+      "surname": "bernal",
+      "email": "mabernal94@gmail.com",
+      "id": 1
+    },
+    {
+      "pass": "rethrtjhrty",
+      "name": "afvaseg",
+      "surname": "aergserg",
+      "email": "swerhrtherth",
+      "id": 2
+    }
+  ]
+}

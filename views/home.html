@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="shortcut icon" href="../public/img/logo-backlog.svg" type="image/x-icon">
+    <title>Home</title>
+  </head>
+  <body class="bodyHome" onload="if (!(verificarLocalStorage())) redireccionarSinLocalStorage();">
+    <header class="nav">
+      <figure class="contenedorLoader">
+        <div class="loader"></div>
+      </figure>
+        <a class="transform" href="home.html"
+        ><img src="../public/img/logo-backlog.svg" alt="logo de backlog"
+      /></a>
+    </header>
+      <main class="mainHome">      
+        <section>
+          <section class="board-container">
+            <button class="pre-btn"><img src="../public/img/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="../public/img/arrow.png" alt=""></button>
+            <section id="boardContainerEvent">
+            <section class="board-card">
+              <a href="board.html">
+                <figure class="board-image">
+                  <img src="../public/img/first-board.jpg" class="board-thumb" alt="tu tablero">
+              </figure>
+              <figcaption class="board-info">
+                  <h2 class="board-brand">Tablero 1</h2>
+              </figcaption>
+              </a>
+            </section>
+            </section>
+            <section id="boardContainerEvent">
+              <section class="board-card">
+                  <figure class="board-image">
+                      <img src="../public/img/first-board.jpg" class="board-thumb" alt="tu tablero">
+                  </figure>
+                  <figcaption class="board-info">
+                      <h2 class="board-brand">Tablero 2</h2>
+                  </figcaption>
+              </section>
+              </section>
+              <section id="boardContainerEvent">
+                <section class="board-card">
+                    <figure class="board-image">
+                        <img src="../public/img/first-board.jpg" class="board-thumb" alt="tu tablero">
+                    </figure>
+                    <figcaption class="board-info">
+                        <h2 class="board-brand">Tablero 3</h2>
+                    </figcaption>
+                </section>
+                </section>
+                <section id="boardContainerEvent">
+                  <section class="board-card">
+                      <figure class="board-image">
+                          <img src="../public/img/first-board.jpg" class="board-thumb" alt="tu tablero">
+                      </figure>
+                      <figcaption class="board-info">
+                          <h2 class="board-brand">Tablero 4</h2>
+                      </figcaption>
+                  </section>
+                  </section>
+                  <section id="boardContainerEvent">
+                    <section class="board-card">
+                        <figure class="board-image">
+                            <img src="../public/img/first-board.jpg" class="board-thumb" alt="tu tablero">
+                        </figure>
+                        <figcaption class="board-info">
+                            <h2 class="board-brand">Tablero 5</h2>
+                        </figcaption>
+                    </section>
+                    </section>
+                    <section id="boardContainerEvent">
+                      <section class="board-card">
+                          <figure class="board-image">
+                              <img src="../public/img/first-board.jpg" class="board-thumb" alt="tu tablero">
+                          </figure>
+                          <figcaption class="board-info">
+                              <h2 class="board-brand">Tablero 6</h2>
+                          </figcaption>
+                      </section>
+                      </section>
+                      <section id="boardContainerEvent">
+                        <section class="board-card">
+                            <figure class="board-image">
+                                <img src="../public/img/first-board.jpg" class="board-thumb" alt="tu tablero">
+                            </figure>
+                            <figcaption class="board-info">
+                                <h2 class="board-brand">Tablero 7</h2>
+                            </figcaption>
+                        </section>
+                        </section>                                                                        
+        </section>
+        </section>
+      <section class="actions">
+        <article class="newBoard transform" >
+          <a  href="new-board.html" id="newBoardEvent">
+            <p>
+              <i class="fa-solid fa-folder-plus"></i>
+            </p>
+        <h2>Nuevo<br>tablero</h2>
+          </a>
+            <p>
+        </article>
+        <article class="profile transform">
+            <a href="profile.html">
+                <p>
+                    <i class="fa-solid fa-user"></i>
+                </p>
+              <h2>Mi perfil</h2>
+            </a>
+        </article>
+      </section>
+    </main>
+    <footer class="footerHome">
+      <img src="../public/img/logo-backlog.svg" alt="logo de backlog" />
+      <button type="click" id="logout"  class="transform"
+      ><article>
+        <h4 class="logout">Log out</h4>
+      </article>
+      </button>
+      <figcaption>< backlog ></p>
+    </footer>
+    <script src="../js/login.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/url.js"></script>
+    <script src="../js/newboard.js"></script>
+  </body>
+</html>

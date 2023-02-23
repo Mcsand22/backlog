@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../public/img/logo-backlog.svg"
+      type="image/x-icon"
+    />
+    <title>Registro</title>
+  </head>
+  <body class="bodyForm">
+    <figure class="contenedorLoader">
+      <div class="loader"></div>
+    </figure>
+    <header>
+      <img src="../public/img/logo-backlog.svg" alt="logo de backlog" />
+    </header>
+    <main>
+      <form method="GET" class="form" id="register">
+        <label for="name" name="name"> Nombre </label>
+        <input type="text" name="name" id="nameRegister" required />
+        <p id="warningNameRegister"></p>
+        <label for="lastname" name="lastname">Apellido</label>
+        <input type="text" name="lastname" id="lastnameRegister" required />
+        <p id="warningLastNameRegister"></p>
+        <label for="mail">Mail</label>
+        <input type="email" name="mail" id="emailRegister" required />
+        <p id="warningMailRegister"></p>
+        <label for="password" name="password">Contraseña</label>
+        <input type="password" name="password" id="passwordRegister" required />
+        <p id="warningPasswordRegister"></p>
+        <button type="click" class="btn" id="registrar">Registrate</button>
+      </form>
+    </main>
+    <script src="../js/main.js"></script>
+    <script src="../js/register.js"></script>
+  </body>
+</html>
